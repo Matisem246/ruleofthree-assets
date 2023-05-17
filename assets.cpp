@@ -56,18 +56,11 @@ const assets& assets::operator=(const assets& rhs) {
 }
 
 void assets::AddTag(const string& tag) {
-    string* oldTags = _tags;
 
-    // Copy tags into a slightly larger block
-    _tags = new string[_numberOfTags+1];
-    for (size_t i = 0; i < _numberOfTags; i ++) {
-        _tags[i] = oldTags[i];
-    }
-    // Add the new tag and increment count
-    _tags[_numberOfTags++] = tag;
-
-    // Deallocate the old block
-    delete[] oldTags;
+  //write your codes here
+  //write your codes here
+  //write your codes here
+  
 }
 
 

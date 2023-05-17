@@ -2,10 +2,10 @@
 #include "assets.h"
 #include "fstream"
 int main() {
-    assets SPUEmployee01;  // no parameter constructor;
-    assets SPUStudent01("CSC2430"); // name parameter constructor;
-    assets SPUStudent02 = SPUStudent01; // copy constructor is private;
-    SPUEmployee01 = SPUStudent01; // copy assignement is private;
+    assets SPUEmployee01;  // no parameter constructor is called;
+    assets SPUStudent01("CSC2430"); // name parameter constructor is called;
+    assets SPUStudent02 = SPUStudent01; // copy constructor is called;
+    SPUEmployee01 = SPUStudent01; // copy assignement is called;
 
     SPUStudent01.AddTag("Tag-0001");
     SPUStudent01.AddTag("Tag-0002");
