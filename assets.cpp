@@ -60,6 +60,20 @@ void assets::AddTag(const string& tag) {
   //write your codes here
   //write your codes here
   //write your codes here
+
+  string* newTags = new string[_numberOfTags + 1];
+
+  for (size_t i = 0; i < _numberOfTags; ++i) {
+      newTags[i] = _tags[i];
+  }
+
+  newTags[_numberOfTags] = tag;
+
+  delete[] _tags;
+
+  _tags = newTags;
+
+  ++_numberOfTags;
   
 }
 
